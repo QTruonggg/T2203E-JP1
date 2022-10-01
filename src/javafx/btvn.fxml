@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="30.0" layoutY="110.0" prefHeight="31.0" prefWidth="226.0" promptText="Email" />
+      <TextField layoutX="30.0" layoutY="66.0" prefHeight="31.0" prefWidth="226.0" promptText="Họ và tên" />
+      <TextField layoutX="30.0" layoutY="191.0" prefHeight="31.0" prefWidth="226.0" promptText="Địa chỉ" />
+      <Text layoutX="196.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập thông tin">
+         <font>
+            <Font name="Arial Bold" size="32.0" />
+         </font>
+      </Text>
+      <TextField layoutX="30.0" layoutY="149.0" prefHeight="31.0" prefWidth="72.0" promptText="Tuổi" />
+      <Text layoutX="31.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="29.0" layoutY="237.0" mnemonicParsing="false" text="Gửi" textAlignment="CENTER" />
+      <Text layoutX="30.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:   Nguyễn A" />
+      <Text layoutX="30.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:     a@gmail.com" />
+      <Text layoutX="30.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuổi:       20" />
+      <Text layoutX="29.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ:   HN" />
+   </children>
+</Pane>
