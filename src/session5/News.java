@@ -65,7 +65,7 @@ public class News implements INews{
     public void display() {
         System.out.println(Title);
         System.out.println(PublishDate);
-        System.out.println(Author);
+        System.out.println(ID);
         System.out.println(Author);
         System.out.println(AverageRate );
     }

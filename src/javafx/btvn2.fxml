@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx.Controller13">
+    <children>
+        <TextField fx:id="txtName" layoutX="86.0" layoutY="52.0" promptText="Name">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="txtPhone" layoutX="86.0" layoutY="132.0" promptText="Phone">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Button layoutX="162.0" layoutY="203.0" mnemonicParsing="false" onAction="#handleSubmit" text="Submit">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Button>
+        <TextArea layoutX="393.0" layoutY="53.0" prefHeight="345.0" prefWidth="336.0" />
+        <Text fx:id="namephone" layoutX="424.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text1" visible="false" />
+        <Text fx:id="namephone2" layoutX="424.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text2" visible="false" />
+        <Text layoutX="424.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text3" visible="false" />
+        <Text layoutX="424.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text4" visible="false" />
+        <Text layoutX="424.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text5" visible="false" />
+        <Text fx:id="noticeName" fill="#eb0909" layoutX="88.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TextCB1" visible="false" />
+        <Text fx:id="noticePhone" fill="#e80606" layoutX="88.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TextCB2" visible="false" />
+    </children>
+</Pane>
