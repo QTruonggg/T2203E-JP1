@@ -3,12 +3,12 @@ package javafx;
 public class Student {
     String name;
     String email;
-    float poin;
+    int poin;
 
-    public Student(String name, String email, String poin) {
+    public Student(String name, String email, int poin) {
         this.name = name;
         this.email = email;
-        this.poin = Float.parseFloat(poin);
+        this.poin = poin;
     }
 
     public String getName() {
@@ -27,13 +27,14 @@ public class Student {
         this.email = email;
     }
 
-    public float getPoin() {
+    public int getPoin() {
         return poin;
     }
 
-    public void setPoin(float poin) {
+    public void setPoin(int poin) {
         this.poin = poin;
     }
+
     public String toString(){
         return(getName() + "-" + getEmail()+"-" +getPoin()+"\n");
     }

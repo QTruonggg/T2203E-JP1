@@ -1,39 +1,53 @@
 package javafx;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+
+import java.util.ArrayList;
 
 public class Controllerrr {
     public TextField txtName;
     public TextField txtPhone;
+    public ListView<PhoneNumber> lv;
 
-    public Text namephone;
-    public Text namephone2;
-
-
-    public Text noticeName;
-    public Text noticePhone;
+    public Text errors;
 
 
-    public void handleSubmit(){
-        String n = txtName.getText();
-        if(n.isEmpty()){
-            noticeName.setText("Vui lòng nhập tên người dùng");
-            noticeName.setVisible(true);
-        }else {
-            namephone.setText(n);
-            noticeName.setVisible(false);
+
+    private ObservableList<PhoneNumber> phoneList = FXCollections.observableArrayList();
+
+    public void addContact(){
+        try {
+            errors.setVisible(false);
+            if(txtName.getText().isEmpty() || txtPhone.getText().isEmpty()){
+                throw new Exception("Vui lòng nhập đầy đủ tên và số điện thoại");
+            }
+//            phoneList.add(new PhoneNumber(txtName.getText(), txtPhone.getText()));
+            updatePhone();
+            printResult();
+
+        }catch (Exception e){
+            errors.setText(e.getMessage());
+            errors.setVisible(true);
         }
-        String p = txtPhone.getText();
-        if(p.isEmpty()){
-            noticePhone.setText("Vui lòng nhập SĐT người dùng");
-            noticePhone.setVisible(true);
-        }else {
-            namephone.setText(p);
-            noticePhone.setVisible(false);
-        }
-        namephone.setText("1. " +n+ " - " +p);
     }
 
+    public void updatePhone(){
+        for(PhoneNumber p:phoneList){
+            if(p.getName().equals(txtName.getText())){
+                    p.setPhone(txtPhone.getText());
+                    return;
+            }
+        }
+        phoneList.add(new PhoneNumber(txtName.getText(), txtPhone.getText()));
 
+    }
+    public void printResult(){
+        lv.setItems(phoneList);
+        lv.refresh();
+        }
 }
+
