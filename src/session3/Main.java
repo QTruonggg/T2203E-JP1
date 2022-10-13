@@ -1,7 +1,5 @@
 package session3;
 
-import assignment.Account;
-
 import java.util.ArrayList;
 
 public class Main {
