@@ -29,10 +29,7 @@ public class StudentManager {
 
     public void show() {
         for (Student student : studentList) {
-            System.out.format(", ", student.getId());
-            System.out.format(", ", student.getName());
-            System.out.format(", ", student.getAddress());
-            System.out.format(", ", student.getPhone());
+            System.out.println(student.getId() + ", " + student.getName() + ", " + student.getAddress() + ", " + student.getPhone());
         }
     }
 

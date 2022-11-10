@@ -37,10 +37,10 @@ public class Member implements Serializable {
             }
         });
 
-        this.deleteSt.addActionListener(event -> {
-            MemberResponsitory sr = new MemberResponsitory();
-            sr.delete(this);
-        });
+//        this.deleteSt.addActionListener(event -> {
+//            MemberResponsitory sr = new MemberResponsitory();
+//            sr.delete(this);
+//        });
     }
 
     public String getMaTV() {

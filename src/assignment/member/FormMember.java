@@ -45,13 +45,13 @@ public class FormMember {
                 throw new Exception("Please enter full product information!");
             }
 
-            MemberResponsitory mr = new MemberResponsitory();
-            if(this.editData == null){ //nếu input rỗng thì add
-                Member s = new Member(ma, name, Date.valueOf(date), Integer.parseInt(gender),address);
-                mr.create(s);
-            } else {    //edit
-                mr.update(this.editData);
-            }
+//            MemberResponsitory mr = new MemberResponsitory();
+//            if(this.editData == null){ //nếu input rỗng thì add
+//                Member s = new Member(ma, name, Date.valueOf(date), Integer.parseInt(gender),address);
+//                mr.create(s);
+//            } else {    //edit
+//                mr.update(this.editData);
+//            }
 
             //dữ liệu đổ vào assigment01.database, từ assigment01.database tiếp tục đổ ngược lại tbStudent
             ActionEvent ActionEventactionEvent;
