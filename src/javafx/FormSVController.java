@@ -50,8 +50,6 @@ public class FormSVController implements Initializable{
             errors.setVisible(true);
         }
 
-
-
     }
     public void printResult(){
         lv.setItems(List);

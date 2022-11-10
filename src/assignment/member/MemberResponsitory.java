@@ -3,7 +3,7 @@ package assignment.member;
 import java.util.ArrayList;
 
 public class MemberResponsitory implements IMemberInterface {
-    @Override
+//    @Override
     public ArrayList<Member> list() {
         return null;
     }

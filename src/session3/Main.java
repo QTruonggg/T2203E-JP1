@@ -20,7 +20,7 @@ public class Main {
         ArrayList arrayList = new ArrayList();
         arrayList.add(10);
         arrayList.add("Hello world");
-        arrayList.add(new Account());
+//        arrayList.add(new Account());
         arrayList.remove(0);
         arrayList.remove("Hello world");
 
